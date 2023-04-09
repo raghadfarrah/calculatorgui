@@ -1,0 +1,47 @@
+ do
+            {
+                double num1 = 0;
+                double num2 = 0;
+                double result = 0;
+
+                Console.WriteLine("___________________");
+                Console.WriteLine("Calculater Program");
+                Console.WriteLine("___________________");
+
+                Console.WriteLine("Enter num1: ");
+                num1 = Convert.ToDouble(Console.ReadLine());
+
+                Console.WriteLine("Enter num2: ");
+                num2 = Convert.ToDouble(Console.ReadLine());
+
+                Console.WriteLine("Enter an option: ");
+                Console.WriteLine("+ : ADD");
+                Console.WriteLine("- : SUB");
+                Console.WriteLine("* : MULT");
+                Console.WriteLine("/ : DIVI");
+
+                switch (Console.ReadLine())
+                {
+                    case "+":
+                        result = num1 + num2;
+                        Console.WriteLine($"{num1}+{num2}=" + result);
+                        break;
+                    case "-":
+                        result = num1 - num2;
+                        Console.WriteLine($"{num1}-{num2}=" + result);
+                        break;
+                    case "*":
+                        result = num1 / num2;
+                        Console.WriteLine($"{num1}*{num2}=" + result);
+                        break;
+                    case "/":
+                        result = num1 / num2;
+                        Console.WriteLine($"{num1}/{num2}=" + result);
+                        break;
+                    defult:
+                        Console.WriteLine("error");
+                        break;
+                }
+                Console.WriteLine();
+            } while (true);
+ 
